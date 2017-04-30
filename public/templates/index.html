@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>PCAARRD News Aggregator: Admin</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../static/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <img src="../static/img/logo-masthead-large.png" class="navbar-brand" href="index.html" target="_blank" style="width:300px;height:60px;" "/>
+                <!--Links-->
+                <ul class="nav navbar-nav pull-right">
+                    <li class="notice">
+                    	Hello, <span style="font-weight:bold;font-size:26px;"> {{ name }}</span>!
+					</li>
+                </ul>
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Content-->
+    <div class="container">
+        <div class="row">
+            <h3> HOME </h3> 
+            <!--First columnn-->
+            <div class="col-md-3">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Main Headline</h4>
+                        <p class="card-note">(NOTE: Max. of 3 categories only.)</p>
+                        <!--Text-->
+            						<div class="form-check">
+            						  <label class="form-check-label">
+            							<input class="form-check-input" type="checkbox" value="">
+            							Agriculture
+            						  </label><br/>
+            						  <label class="form-check-label">
+            							<input class="form-check-input" type="checkbox" value="">
+            							Entertainment
+            						  </label><br/>
+            						  <label class="form-check-label">
+            							<input class="form-check-input" type="checkbox" value="">
+            							PH Politics
+            						  </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Sports
+                          </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Technology
+                          </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Weather
+                          </label>
+            						</div>
+                   </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-md-3">
+                <!--Card-->
+                <div class="card">
+
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Other News</h4>
+                        <p class="card-note">(NOTE: Max. of 6 categories only.)</p>
+                        <!--Text-->
+                        <div class="form-check">
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Agriculture
+                          </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Entertainment
+                          </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          PH Politics
+                          </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Sports
+                          </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Technology
+                          </label><br/>
+                          <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Weather
+                          </label>
+                        </div>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-md-3">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Sort by</h4>
+                        <!--Text-->
+                        <div class="custom-controls-stacked">
+                          <label class="custom-control custom-radio">
+                            <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Alphabetical (Author)</span>
+                          </label>
+                          <label class="custom-control custom-radio">
+                            <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Alphabetical (News title)</span>
+                          </label>
+                          <label class="custom-control custom-radio">
+                            <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Most Recent</span>
+                          </label>
+                        </div>
+                    </div>                    
+                    <!--/.Card content-->
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+
+
+            <!--Fourth columnn-->
+            <div class="col-md-3">
+                <!--Card-->
+                <div class="card">
+
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">News Sources</h4>
+                        <p class="card-note">(NOTE: Max. of 6 news media outlets only.)</p>
+                        <!--Text-->
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" checked>
+                            PCAARRD News Archive
+                          </label><br/>
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">
+                            Philippine Daily Inquirer Latest Stories
+                          </label><br/>
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">
+                            Philippine Star Breaking News
+                          </label><br/>
+                        </div>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Fourth columnn-->            
+
+                <!-- SAVE, RESET, PREVIEW BUTTONS -->
+                <div class="bottomBtns pull-right">
+                    <a href="#" class="btn btn-primary btn-warning">Reset</a>
+                    <a href="#" class="btn btn-primary btn-primary">Save</a>
+                    <a href="../home" target="_blank" class="btn btn-primary btn-success">Preview</a>
+                </div>
+            
+            
+        </div>
+    </div>
+    <!--/.Content-->
+
+
+    <!--Footer-->
+    <footer class="footer-text">
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2016 Copyright<br/>Made by <span style="font-weight:bold"> Janel and Chelseah</span>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+
+    <script>
+
+        //Save button
+          $('#myButton').on('click', function () {
+            var $btn = $(this).button('loading')
+            // business logic...
+            $btn.button('reset')
+          })
+
+    </script>
+
+
+</body>
+
+</html>

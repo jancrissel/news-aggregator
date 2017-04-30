@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Log-In</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../static/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <img src="../static/img/logo-masthead-large.png" class="navbar-brand" href="index.html" target="_blank" style="width:300px;height:60px;" "/>
+			</div>
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Content-->
+    <div class="container">
+        <div class="row">
+
+			<div class="login">
+           <!--First columnn-->
+            <div class="col-md-6">
+                <!--Card-->
+                <div class="card">
+	
+					<div class="container">
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <h4 class="card-title">Log-In</h4>
+                        <!--Text-->
+		                <forms>
+		                    <div class="form-group">
+		                        <label for="username"> Enter username: </label><br/>
+		                        <input type="username" class="form-control" id="username">
+		                    </div>
+		                </forms>  
+		                    <div class="form-group">
+		                        <label for="password"> Enter password: </label>
+		                        <input type="password" class="form-control" id="password">
+		                    </div>
+		                </forms>
+		                </div>
+						<a href="../admin/Janel" class="btn btn-teal">LOG-IN</a><br/>
+                        <a href="#" class="btn btn-teal" data-toggle="modal" data-target=".bs-example-modal-sm">REGISTER</a> 
+
+                        <!-- MODAL FOR SIGN UP -->
+                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content" style=" height:50%; width:60%; margin-left: 20%; margin-right: 20%;">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title card-title" id="gridSystemModalLabel" style="font-size:16px; text-align:left;">Register an Account</h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                       <div class="form-group col-md-6">
+                            <label for="first_name">First Name</label>
+                            <input style="text-align:center; font-size:12px;" type="text" class="form-control" name="" id="first_name" placeholder="Jan Crissel">
+                        </div>
+
+                       <div class="form-group col-md-6">
+                            <label for="first_name">Last Name</label>
+                            <input style="text-align:center; font-size:12px;" type="text" class="form-control" name="" id="first_name" placeholder="de Ramos">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_name">Username</label>
+                            <input style="text-align:center; font-size:12px;" type="text" class="form-control" name="user_name" id="" placeholder="jancrissel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input style="text-align:center;font-size:12px;" type="email" class="form-control" name="" id="" placeholder="joderamos@up.edu.ph">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="password">Password</label>
+                            <input style="text-align:center;font-size:12px;" type="password" class="form-control" name="" id="password" placeholder="Password">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input style="text-align:center;font-size:12px;" type="password" class="form-control" name="" id="confirm_password" placeholder="Confirm Password">
+                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Register</button>
+                              </div>
+                            </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                        <!--/.MODAL FOR SIGN UP -->
+
+                   </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+			</div>
+		</div>
+	</div>
+
+
+    <!--Footer-->
+    <footer class="footer-text">
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2016 Copyright<br/>Made by <span style="font-weight:bold"> Janel and Chelseah</span>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+
+    <script>
+
+        //Save button
+          $('#myButton').on('click', function () {
+            var $btn = $(this).button('loading')
+            // business logic...
+            $btn.button('reset')
+          })
+
+    </script>
+
+
+</body>
+
+</html>
