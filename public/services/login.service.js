@@ -1,6 +1,7 @@
 'use strict';
 
 var host = 'http://localhost:3000';
+//var mysql = require('mysql');
 
 (function(){
   angular
@@ -21,6 +22,12 @@ var host = 'http://localhost:3000';
           //   });
 
           // return deferred.promise;
+/*          connectDB.query('SELECT * from ADMIN', function(error, results, fields){
+            console.log(results);
+          });*/
+        },
+        getNewCredentials: function() {
+
         }
       }
   });
