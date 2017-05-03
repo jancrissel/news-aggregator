@@ -1,8 +1,9 @@
+const config = require(__dirname + '/public/config/router');
 var express = require('express');
-var mysql = require('mysql'); 
+//var mysql = require('mysql'); 
 var app = express();
 
-var connectDB = mysql.createConnection({
+/*var connectDB = mysql.createConnection({
 	//properties...
 	host: 'localhost',
 	user: 'aggregator',
@@ -16,7 +17,7 @@ connectDB.connect(function(error){
 	else 
 		console.log('CONNECTED!');
 });
-
+*/
 app.use(express.static('public'));
 var server = app.listen(3000, function(){
     var port = server.address().port;
