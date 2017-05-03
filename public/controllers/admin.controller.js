@@ -8,8 +8,8 @@
             $scope.news = [];
 
             adminService.getCredentials()
-              .then(function(credentials) {
-                $scope.news = credentials;
+              .then(function(data) {
+                $scope.news = data;
               });
         });
 

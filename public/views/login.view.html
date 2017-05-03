@@ -25,23 +25,23 @@
 	
 					<div class="container">
                     <!--Card content-->
-                    <div class="card-block">
+                    <div class="card-block" ng-controller="logInCtrl">
                         <!--Title-->
                         <h4 class="card-title">Log-In</h4>
                         <!--Text-->
-		                <forms>
+		                <form name="logInForm" ng-submit="getCredentials()" novalidate>
 		                    <div class="form-group">
 		                        <label for="username"> Enter username: </label><br/>
-		                        <input type="username" class="form-control" id="username">
+		                        <input type="username" ng-model="user.username" class="form-control" id="username">
 		                    </div>
 		                    <div class="form-group">
 		                        <label for="password"> Enter password: </label>
-		                        <input type="password" class="form-control" id="password">
+		                        <input type="password" ng-model="user.password" class="form-control" id="password">
 		                    </div>
-		                </forms>
+                        <button class="btn btn-teal" type="submit">LOG-IN</button><br/>
+                        <button class="btn btn-teal" data-toggle="modal" data-target=".bs-example-modal-sm">REGISTER</button>                             
+		                </form>
 		                </div>
-						<a href="../admin/Janel" class="btn btn-teal">LOG-IN</a><br/>
-                        <a href="#/login" class="btn btn-teal" data-toggle="modal" data-target=".bs-example-modal-sm">REGISTER</a> 
 
                         <!-- MODAL FOR SIGN UP -->
                         <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
@@ -54,33 +54,33 @@
                               <div class="modal-body">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <form name="userForm" ng-submit="submitForm()" novalidate>
+                                        <form name="userForm" ng-submit="getNewCredentials()" novalidate>
                                             <div class="form-group">
                                                 <label for="name">Full Name</label>
-                                                <input style="text-align:center; font-size:12px;" type="text" class="form-control" name="name" id="name" placeholder="Jan Crissel de Ramos" required/>
+                                                <input style="text-align:center; font-size:12px;" type="text" class="form-control" name="name" id="name" ng-model="user.fullname" placeholder="Jan Crissel de Ramos" required/>
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="username">Username</label>
-                                                <input style="text-align:center; font-size:12px;" type="text" class="form-control" name="username" id="username" placeholder="joderamos" ng-model="user.username" ng-minlength="5" ng-maxlength="12" required/>
+                                                <input style="text-align:center; font-size:12px;" type="text" class="form-control" name="username" id="username" ng-model="user.username" placeholder="joderamos"  ng-minlength="5" ng-maxlength="12" required/>
                                                 <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
                                                 <p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="email">Email</label>
-                                                <input style="text-align:center;font-size:12px;" type="email" class="form-control" name="email" id="email" placeholder="joderamos@up.edu.ph" ng-model="user.email" required/> 
+                                                <input style="text-align:center;font-size:12px;" type="email" class="form-control" name="email" id="email"  ng-model="user.email" placeholder="joderamos@up.edu.ph" required/> 
                                                 <p ng-show="userForm.email.$invalid" class="help-block">Enter a valid email.</p>                
                                             </div>
 
                                             <div class="form-group col-md-6">
                                                 <label for="password">Password</label>
-                                                <input style="text-align:center;font-size:12px;" type="password" class="form-control" name="password" id="password" placeholder="Password" required/>
+                                                <input style="text-align:center;font-size:12px;" type="password" class="form-control" name="password" id="password" ng-model="user.password" placeholder="Password" required/>
                                             </div>
 
                                             <div class="form-group col-md-6">
                                                 <label for="confirm_password">Confirm Password</label>
-                                                <input style="text-align:center;font-size:12px;" type="password" class="form-control" name="" id="confirm_password" placeholder="Confirm Password" required/>
+                                                <input style="text-align:center;font-size:12px;" type="password" class="form-control" name="" id="confirm_password" ng-model="user.confirmPw" placeholder="Confirm Password" required/>
                                             </div>
                                         </form>
                                     </div>
@@ -88,7 +88,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" onClick="">Register</button>
+                                <button type="button" class="btn btn-primary" ng-click="getNewCredentials()">Register</button>
                               </div>
                             </div><!-- /.modal-content -->
                           </div><!-- /.modal-dialog -->
